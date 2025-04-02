@@ -1,7 +1,6 @@
 # 📒 Ricordella - Full-stack project
 
-A responsive and modern landing page for the Ricordella project. Featuring smooth animations, elegant design, and intuitive navigation for better user interaction and product showcase.
-
+The project is a note-taking web application where users can create, manage, and prioritize notes with customizable titles, texts, and deadlines, providing an intuitive and efficient way to organize personal tasks and reminders.
 ## 🌐 Live Demo
 
 ⚠️DUE TO MAINTENANCE REASON THE PAGE IS NO LONGER ONLINE, YOU CAN TEST IT FOLLOWING THIS [Installation Guide](#-installation)
