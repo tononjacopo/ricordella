@@ -4,7 +4,7 @@ A responsive and modern landing page for the Ricordella project. Featuring smoot
 
 ## 🌐 Live Demo
 
-Experience the live demo here: [Ricordella Landing Page](https://tononjacopo.com/ricordella)
+⚠️DUE TO MAINTENANCE REASON THE PAGE IS NO LONGER ONLINE, YOU CAN TEST IT FOLLOWING THIS [Installation Guide](#-installation)
 
 ## 🔥 Features
 
