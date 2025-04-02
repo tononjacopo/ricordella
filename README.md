@@ -71,23 +71,12 @@ To run this project locally with XAMPP:
 
 4. **Configure the Database**  
    - Open [phpMyAdmin](http://localhost/phpmyadmin/) in your browser.
-   - Create a new database (e.g., `ricordella_db`).
-   - Import the provided `.sql` file (located in the project folder) into the newly created database.
+   - Import the provided `.sql` file (located in the project folder) into phpmyadmin import section.
 
-5. **Update Database Configuration**  
-   - In the project folder, locate the configuration file for the database (e.g., `config.php`).
-   - Update the file with the following database details:
-     ```php
-     <?php
-     $dbHost = 'localhost';
-     $dbUsername = 'root';   // Default MySQL username
-     $dbPassword = '';       // Default MySQL password (empty by default)
-     $dbName = 'ricordella_db';  // The database you created
-     ?>
-     ```
-
-6. **Access the Project**  
+5. **Access the Project**  
    - Open your browser and go to `http://localhost/ricordella` to view the landing page.
+
+6. Enjoy😊
 
 ## 📩 Contact
 
