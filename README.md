@@ -1,4 +1,4 @@
-# 📒 Ricordella - Landing Page
+# 📒 Ricordella - Full-stack project
 
 A responsive and modern landing page for the Ricordella project. Featuring smooth animations, elegant design, and intuitive navigation for better user interaction and product showcase.
 
