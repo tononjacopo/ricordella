@@ -48,13 +48,29 @@ The project is a note-taking web application where users can create, manage, and
 ## 🗁 Project Structure
 
 ```plaintext
-🛆 ricordella-landing
-├── 💜 index.html      # Main HTML structure
-├── 🎨 style.css       # CSS styles
-├── 🚀 main.js         # JavaScript for interactivity
-├── 📂 img/            # Images and icons
-├── 📂 fonts/          # Custom fonts
-└── 📂 aos/            # Animation library
+ricordella/
+├──  index.html          # Main welcome page
+├──  premium.html        # Page for premium features
+├──  dashboard/          # Empty for now
+├──  media/              # Media files (images, videos, etc.)
+├──  pages/              # Other HTML pages
+├──  php/                # PHP files for server-side logic
+│   ├── ⚙️ db_connection.php # Database connection
+│   ├──  login.php        # User login management
+│   ├──  notes.php        # User notes management
+│   └──  register.php     # User registration management
+├──  script/             # JavaScript files for client-side interactivity
+│   ├── ✅ check-same-password.js # Password match verification
+│   ├── ⏳ countdown-date.js  # Countdown functionality
+│   └── ✨ functionality-aesthetic.js # Aesthetic effects and additional features
+├──  sql/                # SQL scripts for database
+│   └──  create.sql       # Database creation script
+└──  style/              # CSS files for styling
+├── ️ font-general.css # General font styles
+├──  form-login-and-register.css # Styles for login and registration forms
+├──  index-welcome.css # Styles specific to the welcome page
+├──  notes-page.css    # Styles for the notes page
+└──  premium-page.css  # Styles for the premium features page
 ```
 
 ## 🛠️ Technologies Used
@@ -62,7 +78,8 @@ The project is a note-taking web application where users can create, manage, and
 - 🏗️ **HTML5** – Semantic page structure
 - 🎨 **CSS3** – Modern, responsive styles
 - ⚡ **JavaScript (ES6+)** – Dynamic functionality
-- ✨ **AOS (Animate On Scroll)** – Smooth animations on scroll
+- 🐘 **PHP** - Server-side scripting
+- 💾 **SQL** - Database management
 
 ## 🚀 Installation
 
