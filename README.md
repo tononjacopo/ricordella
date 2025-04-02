@@ -17,21 +17,33 @@ The project is a note-taking web application where users can create, manage, and
 
 ### 🔹 Homepage
 
-<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/first.png" width="700">
+<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/home.png" width="700">
 
-*Main screen of the landing page.*
+*Main screen of the project.*
 
-### 🔹 Featured Section
+### 🔹 register Section
 
-<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/second.png" width="700">
+<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/register.png" width="700">
 
-*Scroll animation showcasing featured products and features.*
+*Register form for users.*
 
-### 🔹 Detailed View
+### 🔹 Notes Page
 
-<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/third.png" width="700">
+<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/notes-page.png" width="700">
 
 *Detailed view of the Ricordella offerings.*
+
+### 🔹 Notes Creation
+
+<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/new-note.png" height="400">
+
+*Detailed view on how to create a new note.*
+
+### 🔹 Premium Page
+
+<img src="https://github.com/tononjacopo/ricordella/blob/main/screenshot/premium.png" width="700">
+
+*Prewmium page coming soon.*
 
 ## 🗁 Project Structure
 
