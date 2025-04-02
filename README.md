@@ -94,4 +94,4 @@ This project is distributed under the **MIT** license. Feel free to use, modify,
 
 ---
 
-**🔗 [View the Demo](https://tononjacopo.com/ricordella) and consider giving a ⭐ on GitHub if you find it useful!** 😊✨
+**🔗 Consider giving a ⭐ on GitHub if you find it useful!** 😊✨
