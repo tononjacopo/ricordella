@@ -3,7 +3,7 @@
 The project is a note-taking web application where users can create, manage, and prioritize notes with customizable titles, texts, and deadlines, providing an intuitive and efficient way to organize personal tasks and reminders.
 ## 🌐 Live Demo
 
-⚠️DUE TO MAINTENANCE REASON THE PAGE IS NO LONGER ONLINE, YOU CAN TEST IT FOLLOWING THIS [Installation Guide](#-installation)
+⚠️DUE TO MAINTENANCE REASON THE PAGE ATM IS NOT ONLINE
 
 ## 🔥 Features
 
@@ -97,31 +97,6 @@ InkDrop/
 - ⚡ **JavaScript (ES6+)** – Dynamic functionality
 - 🐘 **PHP** - Server-side scripting
 - 💾 **SQL** - Database management
-
-## 🚀 Installation
-
-To run this project locally with XAMPP:
-
-1. **Download and Install XAMPP**  
-   - Download XAMPP from [Apache Friends](https://www.apachefriends.org/download.html) and install it.
-
-2. **Start Apache and MySQL**  
-   - Open the XAMPP control panel and start the **Apache** and **MySQL** services.
-
-3. **Clone the Repository**  
-   - Clone the repository into the `htdocs` folder of your XAMPP installation:
-     ```bash
-     git clone https://github.com/tononjacopo/ricordella.git
-     ```
-
-4. **Configure the Database**  
-   - Open [phpMyAdmin](http://localhost/phpmyadmin/) in your browser.
-   - Import the provided `.sql` file (located in the project folder) into phpmyadmin import section.
-
-5. **Access the Project**  
-   - Open your browser and go to `http://localhost/ricordella` to view the landing page.
-
-6. Enjoy😊
 
 ## 📩 Contact
 
