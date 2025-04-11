@@ -48,29 +48,46 @@ The project is a note-taking web application where users can create, manage, and
 ## 🗁 Project Structure
 
 ```plaintext
-ricordella/
-├──  index.html          # Main welcome page
-├──  premium.html        # Page for premium features
-├──  dashboard/          # Empty for now
-├──  media/              # Media files (images, videos, etc.)
-├──  pages/              # Other HTML pages
-├──  php/                # PHP files for server-side logic
-│   ├── ⚙️ db_connection.php # Database connection
-│   ├──  login.php        # User login management
-│   ├──  notes.php        # User notes management
-│   └──  register.php     # User registration management
-├──  script/             # JavaScript files for client-side interactivity
-│   ├── ✅ check-same-password.js # Password match verification
-│   ├── ⏳ countdown-date.js  # Countdown functionality
-│   └── ✨ functionality-aesthetic.js # Aesthetic effects and additional features
-├──  sql/                # SQL scripts for database
-│   └──  create.sql       # Database creation script
-└──  style/              # CSS files for styling
-├── ️ font-general.css # General font styles
-├──  form-login-and-register.css # Styles for login and registration forms
-├──  index-welcome.css # Styles specific to the welcome page
-├──  notes-page.css    # Styles for the notes page
-└──  premium-page.css  # Styles for the premium features page
+InkDrop/
+│
+├── backend/                    # Backend code (Node + Express)
+│   ├── config/                 # General configurations (DB, API, etc.)
+│   │   └── db.js               # Database connection
+│   ├── controllers/            # App logic functions (e.g., notes, auth)
+│   │   ├── authController.js
+│   │   └── notesController.js
+│   ├── middleware/             # Middleware functions (authentication, error handling)
+│   │   └── auth.js
+│   ├── models/                 # Data models (for DB interaction)
+│   │   └── userModel.js        # User model (e.g., DB structure)
+│   ├── routes/                 # API routes (e.g., /api/auth, /api/notes)
+│   │   ├── authRoutes.js
+│   │   └── notesRoutes.js
+│   ├── services/               # Business logic (main functions)
+│   │   └── userService.js      # Manages user logic (e.g., login, registration)
+│   ├── utils/                  # Utility functions and helpers
+│   │   └── emailService.js     # Function for sending emails
+│   ├── .env                    # Environment variables (secret keys, etc.)
+│   ├── server.js               # Express server initialization
+│   └── package.json            # Project dependencies and commands
+│
+├── frontend/                   # Frontend code (HTML/CSS/JS)
+│   ├── public/                 # Static assets (favicon, images, etc.)
+│   ├── src/                    # Frontend source code
+│   │   ├── assets/             # Images, icons, etc.
+│   │   ├── components/         # Reusable components (Header, Footer, etc.)
+│   │   ├── pages/              # Application pages (e.g., Home, Login, Dashboard)
+│   │   ├── services/           # Functions to interact with the API (fetch)
+│   │   └── utils/              # Frontend utility functions
+│   ├── index.html              # Main HTML page
+│   ├── main.js                 # Main JavaScript code
+│   ├── style.css               # General CSS
+│   └── package.json            # Frontend dependencies and configuration
+│
+├── .gitignore                  # File to ignore files like node_modules, .env, etc.
+├── README.md                   # Project documentation
+└── LICENSE                     # Project license
+
 ```
 
 ## 🛠️ Technologies Used
