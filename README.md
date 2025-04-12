@@ -50,43 +50,45 @@ The project is a note-taking web application where users can create, manage, and
 ```plaintext
 InkDrop/
 │
-├── backend/                    # Backend code (Node + Express)
-│   ├── config/                 # General configurations (DB, API, etc.)
-│   │   └── db.js               # Database connection
-│   ├── controllers/            # App logic functions (e.g., notes, auth)
+├── backend/                          # Backend code (Node + Express)
+│   ├── config/                       # General configurations (DB, APIs, etc.)
+│   │   └── db.js                     # Database connection
+│   ├── controllers/                  # App logic functions (e.g., notes, auth)
 │   │   ├── authController.js
 │   │   └── notesController.js
-│   ├── middleware/             # Middleware functions (authentication, error handling)
+│   ├── database/                     # Database structure and initialization
+│   │   └── scheme.sql                # SQL script with tables, triggers, seed data, etc.
+│   ├── middleware/                   # Middleware functions (authentication, error handling)
 │   │   └── auth.js
-│   ├── models/                 # Data models (for DB interaction)
-│   │   └── userModel.js        # User model (e.g., DB structure)
-│   ├── routes/                 # API routes (e.g., /api/auth, /api/notes)
+│   ├── models/                       # Data models (for DB interaction)
+│   │   └── userModel.js              # User model (e.g., DB structure in JS)
+│   ├── routes/                       # API routes (e.g., /api/auth, /api/notes)
 │   │   ├── authRoutes.js
 │   │   └── notesRoutes.js
-│   ├── services/               # Business logic (main functions)
-│   │   └── userService.js      # Manages user logic (e.g., login, registration)
-│   ├── utils/                  # Utility functions and helpers
-│   │   └── emailService.js     # Function for sending emails
-│   ├── .env                    # Environment variables (secret keys, etc.)
-│   ├── server.js               # Express server initialization
-│   └── package.json            # Project dependencies and commands
+│   ├── services/                     # Business logic (core functions)
+│   │   └── userService.js            # Handles user logic (e.g., login, registration)
+│   ├── utils/                        # Utility functions and helpers
+│   │   └── emailService.js           # Function to send emails
+│   ├── .env                          # Environment variables (secret stuff)
+│   ├── server.js                     # Express server initialization
+│   └── package.json                  # Project dependencies and scripts
 │
-├── frontend/                   # Frontend code (HTML/CSS/JS)
-│   ├── public/                 # Static assets (favicon, images, etc.)
-│   ├── src/                    # Frontend source code
-│   │   ├── assets/             # Images, icons, etc.
-│   │   ├── components/         # Reusable components (Header, Footer, etc.)
-│   │   ├── pages/              # Application pages (e.g., Home, Login, Dashboard)
-│   │   ├── services/           # Functions to interact with the API (fetch)
-│   │   └── utils/              # Frontend utility functions
-│   ├── index.html              # Main HTML page
-│   ├── main.js                 # Main JavaScript code
-│   ├── style.css               # General CSS
-│   └── package.json            # Frontend dependencies and configuration
+├── frontend/                         # Frontend code (HTML/CSS/JS)
+│   ├── public/                       # Static assets (favicon, images, etc.)
+│   ├── src/                          # Frontend source code
+│   │   ├── assets/                   # Images, icons, etc.
+│   │   ├── components/               # Reusable components (Header, Footer, etc.)
+│   │   ├── pages/                    # App pages (e.g., Home, Login, Dashboard)
+│   │   ├── services/                 # Functions to interact with APIs (fetch)
+│   │   └── utils/                    # Frontend utility functions
+│   ├── index.html                    # Main HTML page
+│   ├── main.js                       # Main JS file
+│   ├── style.css                     # Global CSS
+│   └── package.json                  # Frontend dependencies and config
 │
-├── .gitignore                  # File to ignore files like node_modules, .env, etc.
-├── README.md                   # Project documentation
-└── LICENSE                     # Project license
+├── .gitignore                        # File to ignore things like node_modules, .env, etc.
+├── README.md                         # Project documentation
+└── LICENSE                           # Project license
 
 ```
 
