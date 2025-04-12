@@ -1,4 +1,4 @@
-# 📒 Ricordella - Full-stack project
+# 📒 InkDrop - Full-stack project
 
 The project is a note-taking web application where users can create, manage, and prioritize notes with customizable titles, texts, and deadlines, providing an intuitive and efficient way to organize personal tasks and reminders.
 ## 🌐 Live Demo
