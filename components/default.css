@@ -1,0 +1,365 @@
+:root {
+    --text: #003049;
+    --highlight: #D62828;
+    --accent: #F77F00;
+    --background: #FCBF49;
+    --background-light: #EAE2B7;
+    --white: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    background-color: var(--background-light);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 24px auto 0 auto;
+    border: 2px solid var(--accent);
+    position: fixed;
+    width: 72em;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#nav-logo {
+    width: 50px;
+    height: 50px;
+}
+
+#nav-logo a {
+    position: absolute;
+}
+
+#link-logo {
+    height: 50px;
+    width: 50px;
+}
+
+#logo {
+    height: 100%;
+    width: auto;
+}
+
+#nav-title {
+    text-align: center;
+    color: var(--white);
+    flex-grow: 1;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3.5%;
+    flex-grow: 1;
+}
+
+#nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links ul li {
+    margin: 0 15px;
+}
+
+#nav-links ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text);
+    position: relative;
+    font-size: 20px;
+}
+
+#nav-links ul li a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text);
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s linear;
+}
+
+#nav-links ul li a:hover {
+    color: var(--highlight);
+}
+
+#nav-links ul li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    background-color: var(--highlight);
+}
+
+.search-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--background);
+    height: 45px;
+    border-radius: 30px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.search-btn {
+    color: var(--text);
+    float: right;
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+input::placeholder {
+    color: var(--highlight);
+}
+
+.fa-search {
+    font-size: 18px;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: var(--text);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 25px;
+    width: 0;
+}
+
+.search-box:hover {
+    background-color: var(--white);
+}
+
+.search-box:hover > .search-txt {
+    width: 170px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: var(--white);
+}
+
+.search-box:not(:hover) > .search-btn {
+    background: var(--background);
+}
+
+.search-box:hover > .search-btn::after {
+    background: var(--background);
+}
+
+.footer {
+    border-top: 2px solid var(--accent);
+    width: 100%;
+    background-color: var(--background);
+    position: fixed;
+    bottom: 0;
+    padding: 25px 0 16px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-line {
+    border: 1px solid var(--accent);
+    margin: 20px auto 10px;
+    width: 71.3em;
+}
+
+.footer-text-line {
+    text-align: center;
+    color: var(--text);
+    margin-top: 6px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: var(--text);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--highlight);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.footer-col h4:hover::before {
+    width: 80px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--text);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--white);
+    padding-left: 8px;
+}
+
+.footer-col .social-links a i {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--text);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a i:hover {
+    color: var(--text);
+    background-color: var(--white);
+}
+
+.fa-x-twitter {
+    font-size: 1.2em;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1200px) {
+    header {
+        width: 55em;
+    }
+    .search-box:hover > .search-txt {
+        width: 125px;
+    }
+    .footer-line {
+        width: 55em;
+    }
+}
+
+@media(max-width: 950px) {
+    header {
+        width: 45em;
+    }
+    .search-box:hover > .search-txt {
+        width: 80px;
+    }
+    .footer-line {
+        width: 45em;
+    }
+}
+
+@media(max-width: 755px) {
+    header {
+        width: 30em;
+    }
+    .search-box:hover > .search-txt {
+        width: 80px;
+    }
+    .footer-line {
+        width: 30em;
+    }
+}
+
+@media(max-width: 490px) {
+    header {
+        width: 25em;
+    }
+    #nav-links ul {
+        flex-wrap: wrap;
+    }
+    #nav-links ul li a {
+        font-size: 16px;
+    }
+    .search-box:hover > .search-txt {
+        width: 250px;
+    }
+    .footer-line {
+        width: 25em;
+    }
+}
